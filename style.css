@@ -1,23 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
-@font-face {
-  font-family: "Digital";
-  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
-  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
-      format("svg");
-}
 body {
+  margin: 0;
   font-family: "Share Tech Mono", "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
   overflow: hidden;
-  background-color: #c2c2d6;
+  background-color: #413f42;
 }
 a {
   text-decoration: none;
@@ -37,17 +24,17 @@ a {
 }
 #display {
   width: 100%;
-  min-height: 5rem;
+  min-height: 6rem;
   overflow-wrap: break-word;
-  font-family: digital;
-  font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.161);
+  font-family: "poppins";
+  background-color: rgb(24 24 24);
   text-align: right;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 0.3rem 0.3rem;
+  padding: 0.4rem;
   box-sizing: border-box;
+  position: relative;
 }
 .row-con {
   display: grid;
@@ -96,9 +83,18 @@ a {
 }
 span.type {
   font-size: 3rem;
+  position: absolute;
+  right: 5px;
+  top: 30px;
+  transition: all 0.2s;
 }
+
+.active {
+  top: 0px !important;
+}
+
 span.result {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: block;
 }
 .itemAC {
